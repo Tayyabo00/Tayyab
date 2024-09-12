@@ -385,7 +385,7 @@ section .title::after {
 
 /* teams section styling */
 .teams .title::after {
-	content: "who with me";
+	content: " Reviews of my work from others";
 }
 .teams .carousel .card {
 	background: #222;
@@ -648,7 +648,8 @@ footer span a:hover {
 		font-size: 20px;
 	}
 	.services .serv-content .card {
-		width: 100%;
+		
+		width: calc(50%-10px);
 	}
 }
 
