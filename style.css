@@ -192,6 +192,9 @@ section .title::after {
 	font-weight: 600;
 	margin-left: -3px;
 }
+.home .home-content .text-2 span {
+	color: crimson;
+ }
 .home .home-content .text-3 {
 	font-size: 40px;
 	margin: 5px 0;
@@ -384,9 +387,17 @@ section .title::after {
 }
 
 /* teams section styling */
-.teams .title::after {
+.teams #feedbackTitle::after {
 	content: " Reviews of my work from others";
+
 }
+
+.teams #TeamTitle::after {
+	content: "who with me";
+
+}
+
+
 .teams .carousel .card {
 	background: #222;
 	border-radius: 6px;
