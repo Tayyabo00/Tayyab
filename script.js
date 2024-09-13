@@ -35,7 +35,7 @@ $(document).ready(function () {
 
 	// typing text animation script
 	var typed = new Typed(".typing", {
-		strings: ["like Pro", "with me"],
+		strings: ["like Pro", "with us"],
 		typeSpeed: 100,
 		backSpeed: 60,
 		loop: true,
@@ -50,6 +50,28 @@ $(document).ready(function () {
 
 	// owl carousel script
 	$(".carousel").owlCarousel({
+		margin: 20,
+		loop: true,
+		autoplay: true,
+		autoplayTimeOut: 200,
+		autoplayHoverPause: true,
+		responsive: {
+			0: {
+				items: 1,
+				nav: false,
+			},
+			600: {
+				items: 2,
+				nav: false,
+			},
+			1000: {
+				items: 3,
+				nav: false,
+			},
+		},
+	});
+
+	$(".carouselo").owlCarousel({
 		margin: 20,
 		loop: true,
 		autoplay: true,

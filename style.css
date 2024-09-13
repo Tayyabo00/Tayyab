@@ -187,6 +187,9 @@ section .title::after {
 .home .home-content .text-1 {
 	font-size: 27px;
 }
+.textInside span{
+	color: crimson;
+}
 .home .home-content .text-2 {
 	font-size: 75px;
 	font-weight: 600;
@@ -370,20 +373,20 @@ section .title::after {
 	top: 0;
 	background: crimson;
 }
-.skills-content .right .html::before {
+.skills-content .right .ninty::before {
 	width: 90%;
 }
-.skills-content .right .css::before {
-	width: 60%;
+.skills-content .right .nintyFive::before {
+	width: 95%;
 }
-.skills-content .right .js::before {
+.skills-content .right .hundred::before {
+	width: 100%;
+}
+.skills-content .right .eighty::before {
 	width: 80%;
 }
-.skills-content .right .php::before {
-	width: 50%;
-}
-.skills-content .right .mysql::before {
-	width: 70%;
+.skills-content .right .eightyFive::before {
+	width: 85%;
 }
 
 /* teams section styling */
