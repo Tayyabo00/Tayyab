@@ -319,6 +319,10 @@ section .title::after {
 .skills .title::after {
 	content: "what i know";
 }
+.skills #portfolioTitle::after{
+	content: "View my Work" !important;
+  }
+
 .skills .skills-content .column {
 	width: calc(50% - 30px);
 }
@@ -696,4 +700,150 @@ footer span a:hover {
 		font-size: 23px;
 		line-height: 38px;
 	}
+}
+/* ////////////////////////////////////////////////////// */
+#portfolio {
+	padding:  100px 0 100px 0 !important;
+	display: grid !important;
+	grid-template-rows: auto 1fr !important;
+	gap: 20px !important;
+  }
+  
+  #video-thumbnails {
+	padding: 0 40px 0 40px !important;
+	grid-row: 2 !important;
+	display: grid !important;
+	grid-template-columns: repeat(3, 1fr) !important;
+	gap: 20px !important;
+	justify-content: center !important;
+  }
+  
+  #video-thumbnails img {
+	width: 100% !important;
+	height: auto !important;
+	object-fit: contain !important;
+	border: 1px solid crimson;
+	border-radius: 10px !important;
+	cursor: pointer !important;
+	transition: all 0.3s ease !important;
+  }
+  
+  #video-thumbnails img:hover {
+	opacity: 0.8 !important;
+	transform: scale(1.05) !important;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  #video-modal {
+	display: none !important;
+	position: fixed !important;
+	top: 0 !important;
+	left: 0 !important;
+	width: 100% !important;
+	height: 100% !important;
+	background-color: rgba(0, 0, 0, 0.5) !important;
+	z-index: 999 !important;
+  }
+  
+  #video-modal-content {
+	position: relative !important;
+	width: 80% !important;
+	height: 80vh !important;
+	margin: 10vh auto !important;
+	background-color: #fff !important;
+	padding: 20px !important;
+	border-radius: 10px !important;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  #video-iframe {
+	width: 100% !important;
+	height: 100% !important;
+	border: none !important;
+  }
+  
+  /* Media queries for responsive design */
+  
+  @media only screen and (max-width: 768px) {
+	#video-thumbnails {
+	  grid-template-columns: repeat(2, 1fr) !important;
+	}
+  }
+  
+  @media only screen and (max-width: 480px) {
+	#video-thumbnails {
+	  grid-template-columns: repeat(1, 1fr) !important;
+	}
+  }
+
+/* //////////////////////////////////////// */
+
+
+#custom-parent {
+    width: 80% !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap !important; /* Ensures responsive wrapping */
+    gap: 20px !important; /* Adds some space between the cards */
+}
+
+#custom-card {
+    background-color: black !important;
+    border-radius: 15px !important;
+    padding: 20px !important;
+    width: 48% !important; /* Ensures two cards fit horizontally on desktop */
+    text-align: center !important;
+    transition: background-color 0.3s ease-in-out !important;
+    box-sizing: border-box !important;
+}
+
+#custom-image-wrapper {
+    border-radius: 50% !important;
+    border: 5px solid crimson !important;
+    overflow: hidden !important;
+    width: 120px !important;
+    height: 120px !important;
+    margin: 0 auto 15px auto !important;
+    transition: border 0.3s ease-in-out, transform 0.3s ease-in-out !important;
+}
+
+#custom-image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+    transition: transform 0.3s ease-in-out !important;
+}
+
+#custom-name {
+    color: white !important;
+    font-size: 24px !important;
+    margin: 10px 0 !important;
+}
+
+#custom-title {
+    color: white !important;
+    font-size: 16px !important;
+    margin: 0 !important;
+}
+
+#custom-card:hover {
+    background-color: crimson !important;
+}
+
+#custom-card:hover #custom-image-wrapper {
+    border-color: white !important;
+    transform: scale(1.1) !important;
+}
+
+#custom-card:hover #custom-image {
+    transform: scale(0.95) !important;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #custom-card {
+        width: 100% !important; /* Stack cards vertically on smaller screens */
+    }
 }
