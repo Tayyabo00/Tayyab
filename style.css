@@ -87,7 +87,7 @@ section .title::after {
 	position: fixed;
 	width: 100%;
 	z-index: 999;
-	padding: 30px 0;
+	padding: 30px 0 10px 0;
 	font-family: "Ubuntu", sans-serif;
 	transition: all 0.3s ease;
 }
@@ -320,8 +320,13 @@ section .title::after {
 	content: "what i know";
 }
 .skills #portfolioTitle::after{
-	content: "View my Work" !important;
+	content: "Video Editing" !important;
+}
+
+.skills #portfolioTitle2::after{
+	content: "Graphics Designing" !important;
   }
+
 
 .skills .skills-content .column {
 	width: calc(50% - 30px);
@@ -395,7 +400,7 @@ section .title::after {
 
 /* teams section styling */
 .teams #feedbackTitle::after {
-	content: " Reviews of my work from others";
+	content: " Reviews";
 
 }
 
@@ -587,6 +592,21 @@ footer span a:hover {
 	}
 }
 @media (max-width: 947px) {
+	.home{
+		margin-top: 10px;
+	}
+	.navbar .logo a img {
+		/* background: #ffffff00; */
+		transition: all 0.5s ease;
+	}
+	.navbar .logo a img {
+		background: #111;
+		border-radius: 50%;
+	}
+	.navbar{
+		background-color: crimson;
+		padding: 15px 0;
+	}
 	.menu-btn {
 		display: block;
 		z-index: 999;
@@ -701,13 +721,13 @@ footer span a:hover {
 }
 /* ////////////////////////////////////////////////////// */
 #portfolio {
-	padding:  100px 0 100px 0 !important;
-	display: grid !important;
+	padding:  100px 50px 100px 50px !important;
+	/* display: grid !important; */
 	grid-template-rows: auto 1fr !important;
 	gap: 20px !important;
   }
   
-  #video-thumbnails {
+  #video-thumbnails , #video-thumbnailo {
 	padding: 0 40px 0 40px !important;
 	grid-row: 2 !important;
 	display: grid !important;
@@ -716,7 +736,7 @@ footer span a:hover {
 	justify-content: center !important;
   }
   
-  #video-thumbnails img {
+  #video-thumbnails img , #video-thumbnailo img {
 	width: 100% !important;
 	height: auto !important;
 	object-fit: contain !important;
@@ -726,11 +746,12 @@ footer span a:hover {
 	transition: all 0.3s ease !important;
   }
   
-  #video-thumbnails img:hover {
+  #video-thumbnails img:hover , #video-thumbnailo img:hover {
 	opacity: 0.8 !important;
 	transform: scale(1.05) !important;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important;
-  }
+  } 
+
   
   #video-modal {
 	display: none !important;
@@ -763,16 +784,17 @@ footer span a:hover {
   /* Media queries for responsive design */
   
   @media only screen and (max-width: 768px) {
-	#video-thumbnails {
+	#video-thumbnails,#video-thumbnailo {
 	  grid-template-columns: repeat(2, 1fr) !important;
 	}
   }
   
   @media only screen and (max-width: 480px) {
-	#video-thumbnails {
+	#video-thumbnails ,#video-thumbnailo {
 	  grid-template-columns: repeat(1, 1fr) !important;
 	}
   }
+
 
 /* //////////////////////////////////////// */
 
@@ -844,4 +866,39 @@ footer span a:hover {
     #custom-card {
         width: 100% !important; /* Stack cards vertically on smaller screens */
     }
+}
+/* /////////////////////////////////// */
+
+.thumbnail-container {
+    position: relative;
+    display: inline-block;
+}
+
+.hover-text {
+    /* position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0; */
+
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(29, 106, 154, 0.72);
+	color: #fff;
+	visibility: hidden;
+	opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.thumbnail-container:hover .hover-text {
+    visibility: visible;
+    opacity: 1;
 }
