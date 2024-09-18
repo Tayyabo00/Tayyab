@@ -156,6 +156,9 @@ const videoIds = {
 	'video-8-thumbnail': '1mGNrnPvUFJGkVbeT4AG5aVms7CPDSvhO',
 	'video-9-thumbnail': '1rJeWTHIJEQt-A1eGBhEKlJC4vviZ-uQU',	
 	'video-10-thumbnail': '1_7eNZ5VRNqYNiYiqfx9iQZpeRHcbLvOc',
+	'video-11-thumbnail': '19w8fLhxC27asqY0aERISBk9o-5wU3fuy',
+	'video-12-thumbnail': '1st4RRFTYXOKd8yzG21Al-rbUkt009Iqe',
+	'video-13-thumbnail': '1eop5Dhff0u8kfIQYyWYRjfjrzt5U_66h',
 	
     // Add more video IDs here
 };
