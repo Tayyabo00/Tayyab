@@ -592,9 +592,7 @@ footer span a:hover {
 	}
 }
 @media (max-width: 947px) {
-	.home{
-		margin-top: 10px;
-	}
+
 	.navbar .logo a img {
 		/* background: #ffffff00; */
 		transition: all 0.5s ease;
