@@ -14,6 +14,7 @@ At **Final Tech Labs**, we believe in turning ideas into reality through cutting
 
 Stay updated with our latest projects, offers, and insights by following us on social media:
 
+-   **Google**: [Final Tech Labs](https://www.google.com/search?q=Final+Tech+Labs)
 -   **Website**: [finaltechlabs.dev](http://www.finaltechlabs.dev)
 -   **LinkedIn**: [linkedin.com/company/finaltechlab](http://linkedin.com/company/finaltechlab)
 -   **Facebook**: [facebook.com/finaltechlab](http://facebook.com/finaltechlab)
