@@ -220,3 +220,15 @@ thumbnails.forEach((thumbnail) => {
         textElement.style.opacity = '0';
     });
 });
+
+
+document.getElementById('videoCard').onclick = function() {
+    document.getElementById('portfolioTitle').scrollIntoView({
+        behavior: 'smooth'
+    });
+};
+document.getElementById('graphicsCard').onclick = function() {
+    document.getElementById('GDesigning').scrollIntoView({
+        behavior: 'smooth'
+    });
+};
